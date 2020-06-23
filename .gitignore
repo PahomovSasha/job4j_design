@@ -1,2 +1,6 @@
 # Project exclude paths
 /target/
+
+# Ignore IDE specific files
+.idea/
+job4j_design.iml
