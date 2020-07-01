@@ -87,13 +87,9 @@ public class SimpleArray<T> implements Iterable<T> {
      */
     public void remove(int index) {
         Objects.checkIndex(index, size);
-        int nextIndex = index + 1;
-        for (int i = index; i < size - 1; i++) {
-            this.arrays[i] = this.arrays[nextIndex];
-            nextIndex++;
-        }
         size--;
-        this.arrays = Arrays.copyOf(this.arrays, size);
+        System.arraycopy(this.arrays, index + 1, this.arrays, index, size - index);
+        arrays[size] = null;
     }
 
     /**
@@ -107,4 +103,13 @@ public class SimpleArray<T> implements Iterable<T> {
         return (T) arrays[index];
     }
 
+    public static void main(String[] args) {
+        SimpleArray<Integer> simpleArray = new SimpleArray<>(4);
+        simpleArray.add(1);
+        simpleArray.add(2);
+        simpleArray.add(3);
+        simpleArray.add(4);
+        simpleArray.remove(1);
+        System.out.println(simpleArray);
+    }
 }

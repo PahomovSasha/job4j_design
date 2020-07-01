@@ -58,7 +58,7 @@ public class SimpleArrayTest {
         simpleArray.add(6);
         simpleArray.add(7);
         simpleArray.remove(3);
-        SimpleArray<Integer> expect = new SimpleArray<>(2);
+        SimpleArray<Integer> expect = new SimpleArray<>(3);
         expect.add(5);
         expect.add(7);
         assertThat(expect, is(simpleArray));
