@@ -1,5 +1,6 @@
 package ru.job4j.generic;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
@@ -45,7 +46,7 @@ public class SimpleArrayTest {
         simpleArray.add(6);
         simpleArray.add(7);
         simpleArray.remove(1);
-        SimpleArray<Integer> expect = new SimpleArray<>(2);
+        SimpleArray<Integer> expect = new SimpleArray<>(3);
         expect.add(5);
         expect.add(7);
         assertThat(expect, is(simpleArray));
