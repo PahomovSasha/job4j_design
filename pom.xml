@@ -59,9 +59,6 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.19.1</version>
         <configuration>
-          <excludes>
-            <exclude>ru.job4j.generic.SimpleArrayTest.java</exclude>
-          </excludes>
         </configuration>
       </plugin>
     </plugins>

@@ -1,4 +1,18 @@
-#Tue Jun 23 21:00:19 YEKT 2020
-configuration*?=A736AAF627D5571223AB80CFCA56E22611630222
-module-resource*?\:checkstyle-xpath-suppressions.xml=73DB869DBF0797D327AD554FCB426A71FFCAE2F6
-module-resource*?\:checkstyle-suppressions.xml=8104A3610C58D8D5B9CF78BA15FAC8C5C642E70A
+#Thu Jul 02 23:36:13 YEKT 2020
+configuration*?=AB4D718124C2B28AAE52B9F3247526B91AB48DE1
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\it\\BackwardArrayItTest.java=1592931777639
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\Role.java=1593706677597
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\Base.java=1593539685743
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\User.java=1593706582530
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\it\\BackwardArrayIt.java=1592929982044
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\it\\EvenNumbersIterator.java=1593196492468
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\MemStore.java=1593712145732
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\Store.java=1593539706657
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\generic\\SimpleArrayTest.java=1593714965859
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\it\\EvenIteratorTest.java=1593102247297
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\it\\MatrixItTest.java=1593100186585
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\RoleStore.java=1593707126444
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\it\\MatrixIt.java=1593539067139
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\UserStore.java=1593711074615
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\SimpleArray.java=1593622509565
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\generic\\UserStoreTest.java=1593712576046
