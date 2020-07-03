@@ -1,6 +1,7 @@
-#Thu Jul 02 23:36:13 YEKT 2020
+#Fri Jul 03 20:34:19 YEKT 2020
 configuration*?=AB4D718124C2B28AAE52B9F3247526B91AB48DE1
 C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\it\\BackwardArrayItTest.java=1592931777639
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\generic\\RoleStoreTest.java=1593790417324
 C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\Role.java=1593706677597
 C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\Base.java=1593539685743
 C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\User.java=1593706582530
@@ -14,5 +15,6 @@ C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\it\\Matrix
 C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\RoleStore.java=1593707126444
 C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\it\\MatrixIt.java=1593539067139
 C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\UserStore.java=1593711074615
-C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\SimpleArray.java=1593622509565
-C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\generic\\UserStoreTest.java=1593712576046
+C\:\\projects\\job4j_design\\chapter_001\\src\\main\\java\\ru\\job4j\\generic\\SimpleArray.java=1593787446995
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\generic\\UserStoreTest.java=1593790456482
+C\:\\projects\\job4j_design\\chapter_001\\src\\test\\java\\ru\\job4j\\generic\\MemStoreTest.java=1593790186079
