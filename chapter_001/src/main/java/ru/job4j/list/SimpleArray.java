@@ -5,22 +5,23 @@ import java.util.*;
 public class SimpleArray<T> implements Iterable<T> {
     private Object[] container = new Object[5];
     private int modCount = 0;
+    private int count = 0;
 
     public T get(int index) {
-        Objects.checkIndex(index, modCount);
+        Objects.checkIndex(index, count);
         return (T) container[index];
     }
 
     public void add(T model) {
-        if (modCount == container.length) {
+        if (count == container.length) {
             container = (Object[]) extendSizeArray();
         }
-        container[modCount] = model;
+        container[count++] = model;
         modCount++;
     }
 
     private T extendSizeArray() {
-        Object[] containerClone = Arrays.copyOf(container, container.length + 5);
+        Object[] containerClone = Arrays.copyOf(container, container.length * 2);
         return (T) containerClone;
     }
 
@@ -32,7 +33,7 @@ public class SimpleArray<T> implements Iterable<T> {
 
             @Override
             public boolean hasNext() {
-                return sizeIterator < modCount;
+                return sizeIterator < count;
             }
 
             @Override
