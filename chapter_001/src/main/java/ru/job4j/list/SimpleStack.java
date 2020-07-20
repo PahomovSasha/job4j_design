@@ -1,12 +1,15 @@
 package ru.job4j.list;
 
+import java.util.NoSuchElementException;
+
 public class SimpleStack<T> {
     private ForwardLinked<T> linked = new ForwardLinked<T>();
 
     public T pop() {
-        T element = linked.get(linked.getSize() - 1);
-        linked.deleteLast();
-        return element;
+        if (linked.getSize() == 0) {
+            throw new NoSuchElementException();
+        }
+        return linked.deleteLast();
     }
 
     public void push(T value) {

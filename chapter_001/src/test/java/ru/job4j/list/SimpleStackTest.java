@@ -5,6 +5,8 @@ import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
 
+import java.util.NoSuchElementException;
+
 public class SimpleStackTest {
 
     @Test
@@ -35,7 +37,7 @@ public class SimpleStackTest {
         assertThat(stack.pop(), is(1));
     }
 
-    @Test (expected = IndexOutOfBoundsException.class)
+    @Test (expected = NoSuchElementException.class)
     public void whenNullPoll() {
         SimpleStack<Integer> stack = new SimpleStack<>();
         stack.pop();
