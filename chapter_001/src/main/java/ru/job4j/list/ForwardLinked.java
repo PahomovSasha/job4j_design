@@ -38,9 +38,10 @@ public class ForwardLinked<T> implements Iterable<T> {
         T deleteElement;
         if (size == 1) {
             deleteElement = deleteFirst();
+            tail = null;
         } else {
             deleteElement = tail.value;
-            tail = tail.next;
+            tail = get(size - 2);
             size--;
         }
         return deleteElement;
@@ -50,13 +51,16 @@ public class ForwardLinked<T> implements Iterable<T> {
         return size;
     }
 
-    public T get(int index) {
+    public Node<T> get(int index) {
         Objects.checkIndex(index, size);
         Node<T> nodeTail = head;
         for (int i = 0; i < index; i++) {
             nodeTail = nodeTail.next;
         }
-        return nodeTail.value;
+        if (nodeTail.next != null) {
+            nodeTail.next = null;
+        }
+        return nodeTail;
     }
 
     public void revert() {

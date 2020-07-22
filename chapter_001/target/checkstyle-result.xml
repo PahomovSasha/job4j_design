@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.29">
-<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\SimpleArray.java">
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\Base.java">
 </file>
-<file name="C:\projects\job4j_design\chapter_001\src\test\java\ru\job4j\generic\MemStoreTest.java">
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\MemStore.java">
 </file>
-<file name="C:\projects\job4j_design\chapter_001\src\test\java\ru\job4j\generic\RoleStoreTest.java">
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\generic\UserStore.java">
 </file>
-<file name="C:\projects\job4j_design\chapter_001\src\test\java\ru\job4j\generic\UserStoreTest.java">
+<file name="C:\projects\job4j_design\chapter_001\src\main\java\ru\job4j\list\SimpleArray.java">
+</file>
+<file name="C:\projects\job4j_design\chapter_001\src\test\java\ru\job4j\list\SimpleArrayTest.java">
 </file>
 </checkstyle>

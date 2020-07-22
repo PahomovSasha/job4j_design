@@ -6,13 +6,17 @@ public class SimpleQueue<T> {
     private int size = 0;
 
     public T poll() {
-        T element = in.pop();
+        T elementIn = in.pop();
         for (int i = 0; i < size - 1; i++) {
-            out.push(element);
-            element = in.pop();
+            out.push(elementIn);
+            elementIn = in.pop();
         }
         size--;
-        return element;
+        for (int i = 0; i < size; i++) {
+            T elementOut = out.pop();
+            in.push(elementOut);
+        }
+        return elementIn;
     }
 
     public void push(T value) {
