@@ -10,7 +10,7 @@ public class SimpleSet<E> implements Iterable<E> {
 
     public void add(E e) {
         for (int i = 0; i < size; i++) {
-            if (simpleArray.get(i) == e) {
+            if (simpleArray.get(i).equals(e)) {
                 return;
             }
         }
