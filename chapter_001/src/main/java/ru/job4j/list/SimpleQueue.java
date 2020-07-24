@@ -6,8 +6,10 @@ public class SimpleQueue<T> {
 
     public T poll() {
         int sizeIn = in.getSize();
-        for (int i = 0; i < sizeIn; i++) {
-            out.push(in.pop());
+        if (out.getSize() == 0) {
+            for (int i = 0; i < sizeIn; i++) {
+                out.push(in.pop());
+            }
         }
         return out.pop();
     }

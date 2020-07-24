@@ -43,4 +43,14 @@ public class SimpleQueueTest {
         SimpleQueue<Integer> queue = new SimpleQueue<>();
         queue.poll();
     }
+
+    @Test
+    public void whenPushPollPushPoll() {
+        SimpleQueue<Integer> queue = new SimpleQueue<>();
+        queue.push(1);
+        queue.push(2);
+        queue.poll();
+        queue.push(3);
+        assertThat(queue.poll(), is(2));
+    }
 }
