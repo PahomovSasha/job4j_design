@@ -66,4 +66,14 @@ public class SimpleSetTest {
         simpleSet.add(2);
         it.next();
     }
+
+    @Test
+    public void whenAddNullElementThenIt() {
+        SimpleSet<Integer> simpleSet = new SimpleSet<>();
+        simpleSet.add(1);
+        simpleSet.add(null);
+        simpleSet.add(3);
+        int rsl = simpleSet.iterator().next();
+        assertThat(rsl, is(1));
+    }
 }

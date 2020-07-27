@@ -3,6 +3,7 @@ package ru.job4j.set;
 import ru.job4j.list.SimpleArray;
 
 import java.util.Iterator;
+import java.util.Objects;
 
 public class SimpleSet<E> implements Iterable<E> {
     private SimpleArray<E> simpleArray = new SimpleArray<>();
@@ -10,7 +11,7 @@ public class SimpleSet<E> implements Iterable<E> {
 
     public void add(E e) {
         for (int i = 0; i < size; i++) {
-            if (simpleArray.get(i).equals(e)) {
+            if (Objects.equals(simpleArray.get(i), e)) {
                 return;
             }
         }
