@@ -1,6 +1,10 @@
 # Project exclude paths
 /target/
 chapter_001/target/**
+chapter_002/target/**
+chapter_003/target/**
+chapter_004/target/**
+chapter_005/target/**
 
 # Ignore IDE specific files
 .idea/
