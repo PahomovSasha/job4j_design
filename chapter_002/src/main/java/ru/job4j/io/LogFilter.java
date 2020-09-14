@@ -3,7 +3,6 @@ package ru.job4j.io;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class LogFilter {
     /**
@@ -15,11 +14,11 @@ public class LogFilter {
     public static List<String> filter(String file) {
         List<String> lines = new ArrayList<>();
         try (BufferedReader in = new BufferedReader(new FileReader(file))) {
-            in.lines().forEach(lines::add);
+            in.lines().filter(s -> s.contains("\" 404 ")).forEach(lines::add);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return lines.stream().filter(s -> s.contains("\" 404 ")).collect(Collectors.toList());
+        return  lines;
     }
 
     /**
