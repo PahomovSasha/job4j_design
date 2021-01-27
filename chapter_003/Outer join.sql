@@ -44,4 +44,5 @@ insert into teens(name, gender) values ('Alina', 'женский');
 insert into teens(name, gender) values ('Ivan', 'мужской');
 insert into teens(name, gender) values ('Elena', 'женский');
 
-select * from teens d cross join teens o;
+select * from teens d cross join teens o
+where d.gender != o.gender;
