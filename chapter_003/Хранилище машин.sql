@@ -48,10 +48,11 @@ insert into car(brand, car_body_id, engine_id, transmission_id) values ('Geely',
 insert into car(brand, car_body_id, engine_id, transmission_id) values ('Volkswagen',2,3,1);
 insert into car(brand, car_body_id, engine_id, transmission_id) values ('Suzuki',3,2,4);
 
-select c.brand, b.body_type, b.color, e.power, e.type, t.type, t.number_gears from car c, car_body b, engine e, transmission t
-where c.car_body_id = b.id
-and c.engine_id = e.id
-and c.transmission_id = t.id;
+select c.brand, b.body_type, b.color, e.power, e.type, t.type, t.number_gears
+from car c
+         inner join car_body b on c.car_body_id = b.id
+         inner join engine e on c.engine_id = e.id
+         inner join transmission t on c.transmission_id = t.id;
 
 select b.body_type, b.color from car c right join car_body b on c.car_body_id = b.id
 where c.brand is null;
